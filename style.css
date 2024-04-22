@@ -1,0 +1,214 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section Styles */
+#hero {
+    background-image: url('japan-background.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #ff6600;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#hero .btn:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Job Listings Section Styles */
+#job-listings {
+    padding: 50px 0;
+}
+
+#job-listings h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+#search {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#search:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#job-list {
+    list-style: none;
+}
+
+#job-list li {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#job-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 576px) {
+    #hero {
+        padding: 80px 0;
+    }
+
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    #hero .btn {
+        font-size: 1em;
+        padding: 12px 24px;
+    }
+
+    #job-listings h2 {
+        font-size: 2em;
+    }
+
+    #search {
+        padding: 12px 16px;
+        font-size: 1em;
+    }
+
+    #job-list li {
+        padding: 20px;
+    }
+}
+
+/* Tablet Responsive Styles */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    #hero h1 {
+        font-size: 2.8em;
+    }
+
+    #hero p {
+        font-size: 1.1em;
+    }
+
+    #hero .btn {
+        font-size: 1.1em;
+        padding: 12px 28px;
+    }
+
+    #job-listings h2 {
+        font-size: 2.2em;
+    }
+
+    #search {
+        padding: 14px 18px;
+        font-size: 1.1em;
+    }
+
+    #job-list li {
+        padding: 25px;
+    }
+}
+
+/* Desktop Responsive Styles */
+@media only screen and (min-width: 993px) {
+    #hero h1 {
+        font-size: 3em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+
+    #hero .btn {
+        font-size: 1.2em;
+        padding: 15px 32px;
+    }
+
+    #job-listings h2 {
+        font-size: 2.5em;
+    }
+
+    #search {
+        padding: 15px 20px;
+        font-size: 1.2em;
+    }
+
+    #job-list li {
+        padding: 30px;
+    }
+}
