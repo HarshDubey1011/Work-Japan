@@ -1,6 +1,8 @@
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f3f3f3;
     color: #333;
 }
@@ -15,7 +17,7 @@ body {
 header {
     background-color: #ff6600;
     color: #fff;
-    padding: 20px 0;
+    padding: 8px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -49,6 +51,8 @@ nav ul li a:hover {
 #hero {
     background-image: url('japan-background.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     color: #fff;
     text-align: center;
     padding: 100px 0;
@@ -80,6 +84,33 @@ nav ul li a:hover {
     color: #fff;
 }
 
+/* Button Styles */
+
+/* Add styles for the search wrapper and button */
+
+.search-wrapper {
+   display: flex;
+  justify-content: space-between; /* Horizontally align items */
+  width: 100%; /* Ensure full width within container */
+  margin-bottom: 20px;
+}
+
+#search-btn {
+  width: auto;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#search-btn:hover {
+  background-color: #e65c00;
+}
+
 /* Job Listings Section Styles */
 #job-listings {
     padding: 50px 0;
@@ -91,12 +122,14 @@ nav ul li a:hover {
 }
 
 #search {
+    flex: 1;
+    margin-right: 0;
     padding: 15px 20px;
     border: none;
     border-radius: 5px;
     width: 100%;
     font-size: 1.1em;
-    margin-bottom: 20px;
+    margin-right: 10px;
     transition: box-shadow 0.3s ease-in-out;
 }
 
